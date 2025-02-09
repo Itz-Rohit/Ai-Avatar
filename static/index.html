@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hindi AI Avatar</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎙️ Hindi AI Avatar 🤖</h1>
+
+    <!-- 🎤 Recording Indicator (NEW) -->
+    <p id="recordingIndicator" style="color: red; display: none;">🎤 Recording...</p>
+
+    <!-- 🔄 Processing Indicator (NEW) -->
+    <p id="processingIndicator" style="color: blue; display: none;">⏳ Processing...</p>
+
+    <button id="recordBtn">🎤 Start Recording</button>
+    <button id="stopBtn" disabled>⏹️ Stop Recording</button>
+
+    <div class="output-section">
+      <h3>Transcription:</h3>
+      <p id="transcription">...</p>
+
+      <h3>AI Response:</h3>
+      <p id="aiResponse">...</p>
+
+      <h3>AI Voice Response:</h3>
+      <audio controls id="audioPlayer"></audio>
+
+      <h3>Talking Avatar:</h3>
+      <video controls id="avatarVideo"></video>
+    </div>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
